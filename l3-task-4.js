@@ -7,7 +7,7 @@
 // xxxx
 // xxxxx
 
-'use sctrict';
+'use strict';
 
 for(let simbol = 'x'; simbol.length < 21; simbol += 'x') {
 	console.log(simbol);

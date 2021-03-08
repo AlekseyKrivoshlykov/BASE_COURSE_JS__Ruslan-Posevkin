@@ -3,6 +3,6 @@
 // Выглядеть это должно так:
 // for(…){// здесь пусто}
 
-'use sctrict';
+'use strict';
 
 for(let i = 0; i < 10; console.log(i++)) {}

@@ -7,21 +7,21 @@
 // b) Организовать функцию countBasketPrice, которая 
 // будет считать стоимость корзины.
 
-'use sctrict';
+'use strict';
 
 let basketItems = [
-['Рубашка', 'XL', '1', 1350],
-['Штаны', 'L', '2', 2599],
-['Балохон', 'L', '1', 4900],
-['Кепка', 'M', '1', 1500],
-['Шорты', 'S', '1', 2250]
+	['Рубашка', 'XL', '1', 1350],
+	['Штаны', 'L', '2', 2599],
+	['Балохон', 'L', '1', 4900],
+	['Кепка', 'M', '1', 1500],
+	['Шорты', 'S', '1', 2250]
 ]
 
 function countBasketPrice(array) {
 	let basketSum = 0;
 	for (let i = 0; i < basketItems.length; i++) {
-	let j = basketItems[i].length - 1;
-	basketSum += basketItems[i][j];
+		let j = basketItems[i].length - 1;
+		basketSum += basketItems[i][j];
 	}
 		return basketSum;
 }
