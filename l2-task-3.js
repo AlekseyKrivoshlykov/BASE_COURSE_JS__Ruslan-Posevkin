@@ -15,20 +15,17 @@ let a = 12;
 let b = 5;
 
 function getMathOperation(a, b) {
-	if (a > 0 && b > 0) {
-		let sub = a - b;
-		alert(sub);
+	if (a >= 0 && b >= 0) { 
+		let sub = alert(a - b);
 	}
 	else if (a < 0 && b < 0) {
-		let mul = a * b;
-		alert(mul);
+		let mul = alert(a * b);
 	}
 	else if ((a < 0 && b >= 0) || (a >= 0 && b < 0)) {
-		let addition = a + b;
-		alert(addition);
+		let addition = alert(a + b);
 	}
 }
 
 getMathOperation(a, b);
-getMathOperation(-4, -14);
+getMathOperation(-5, -7);
 getMathOperation(7, -10);

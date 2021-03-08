@@ -15,39 +15,35 @@ let a = 18;
 let b = 9;
 
 function calcSum(x, y) {
-	let sum = x + y;
-	return sum;
+	return x + y;
 }
 function calcSubtraction(x, y) {
-	let sub = x - y;
-	return sub;
+	return x - y;	
 }
 function calcMultiplication(x, y) {
-	let mul = x * y;
-	return mul;
+	return x * y;
 }
 function calcDivision(x, y) {
-	let div = x / y;
-	return div;
+	return x / y;
 }
 
 function mathOperation(arg1, arg2, operation) {
 	let valueMathOperation = operation(arg1, arg2);
 	switch (operation) {
 		case calcSum:
-		alert(`Сумма чисел ${a} и ${b} = ${valueMathOperation}.`);
-		return valueMathOperation;
+			alert(`Сумма чисел ${a} и ${b} = ${valueMathOperation}.`);
+			return valueMathOperation;
 		case calcSubtraction:
-		alert(`Разность чисел ${a} и ${b} = ${valueMathOperation}.`);
-		return valueMathOperation;
+			alert(`Разность чисел ${a} и ${b} = ${valueMathOperation}.`);
+			return valueMathOperation;
 		case calcMultiplication:
-		alert(`${a} умножить на ${b} = ${valueMathOperation}.`);
-		return valueMathOperation;
+			alert(`${a} умножить на ${b} = ${valueMathOperation}.`);
+			return valueMathOperation;
 		case calcDivision:
-		alert(`${a} поделить на ${b} = ${valueMathOperation}.`);
-		return valueMathOperation;
+			alert(`${a} поделить на ${b} = ${valueMathOperation}.`);
+			return valueMathOperation;
 		default:
-		alert('Error');
+			alert('Error');
 	}
 }
 

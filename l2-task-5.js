@@ -7,23 +7,19 @@
 'use sctrict';
 
 function calcSum(x, y) {
-	let sum = x + y;
-	return sum;
+	return x + y;
 }
 
 function calcSubtraction(x, y) {
-	let sub = x - y;
-	return sub;
+	return x - y;
 }
 
 function calcMultiplication(x, y) {
-	let mul = x * y;
-	return mul;
+	return x * y;
 }
 
 function calcDivision(x, y) {
-	let div = x / y;
-	return div;
+	return x / y;
 }
 
 let sumValue = calcSum(5, 5);
