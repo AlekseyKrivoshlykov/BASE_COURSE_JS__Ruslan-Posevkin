@@ -9,13 +9,13 @@
 // соответствующее сообщение с помощью console.log и 
 // вернуть пустой объект.
 
-'use sctrict';
+'use strict';
 
 	let x = +prompt('Введите число от 0 до 999');
 	let result = getObjectNumbers(x);
 
 	function getObjectNumbers (x) {
-	if(x < 0 || x > 999) {
+		if(x < 0 || x > 999) {
 		return {};
 	}
 
@@ -24,8 +24,8 @@
 		'десятки' : Math.floor(x / 10) % 10,
 		'единицы' : x % 10		
 	}
-	return object;
-}
+		return object;
+	}
 
 	result1 = JSON.stringify(result);
 	alert(`Ваше число разбито на разряды: ${result1}.`);
