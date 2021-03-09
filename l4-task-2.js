@@ -32,7 +32,7 @@
      	return sum;
    	}
 
-     let sumBasket = BasketAllSum(products);
+     let sumBasket = basketAllSum(products);
      console.log(sumBasket);
 
 
